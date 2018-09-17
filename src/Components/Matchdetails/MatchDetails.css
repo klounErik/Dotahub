@@ -1,0 +1,29 @@
+.matchdetails{
+    text-align: center;
+}
+
+.headerWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.gameScore{
+    display: flex;
+}
+
+.dire{
+    text-align: center;
+    margin: 50px;
+}
+.radiant{
+    text-align: center;
+    margin: 50px;
+}
+
+.dire img{
+    border-radius: 50px;
+}
+
+.radiant img{
+    border-radius: 50px;
+}
