@@ -11,7 +11,7 @@ class App extends Component {
   render() {
   return (
           <Router>
-          <div>
+          <div className="App">
           <Route path="/" component={Nav}/>
           <Route path="/updates" component={Updates}/>
           <Route path="/matches" render={props => <Matches {...props} getState={this.getChildren}/>} />
