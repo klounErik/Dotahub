@@ -1,2 +1,2 @@
 # DotaHub
-All the Dotes on one place
+All the Dotes in one place
