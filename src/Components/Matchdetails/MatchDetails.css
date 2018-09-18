@@ -3,6 +3,7 @@
 }
 
 .headerWrapper{
+    background-color: dodgerblue;
     display: flex;
     justify-content: center;
 }

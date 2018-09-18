@@ -5,6 +5,7 @@ import Profile from './Components/Profile/PlayerProfile'
 import Matches from './Components/Matches/Matches'
 import Updates from './Components/Updates/Updates'
 import Nav from './Components/Nav/Nav'
+import Loader from './Components/Loader/Loader'
 import './App.css';
 
 class App extends Component {
@@ -16,8 +17,8 @@ class App extends Component {
           <Route path="/updates" component={Updates}/>
           <Route path="/matches" render={props => <Matches {...props} getState={this.getChildren}/>} />
           <Route path="/matchdetails/:matchid" render={props =><MatchDetails {...props}/>}/>
-          <Route path="/profile" component={Profile}/>
           <Route path="/profile/:id" render={props =><Profile {...props}/>}/>
+          <Route path="/test" component={Loader}/>
           </div>
         </Router>
     );

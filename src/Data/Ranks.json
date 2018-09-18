@@ -1,0 +1,177 @@
+{
+    "Ranks":[
+        {
+            "id": 11,
+            "name": "Herald 1",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f9x2f96x2fTfbtpobmSbol2-2.qohx3fwfstjpox3d6733618319g44b53f5be7305709b21fg_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },{
+            "id": 12,
+            "name": "Herald 2",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2ffx2fffx2fTfbtpobmSbol2-3.qohx3fwfstjpox3d404gce47g252e95571fd16359c4561e5_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 13,
+            "name": "Herald 3",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f1x2f16x2fTfbtpobmSbol2-4.qohx3fwfstjpox3d2eceg630b8203556bg73g123gf19f0g1_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 14,
+            "name": "Herald 4",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f7x2f7ex2fTfbtpobmSbol2-5.qohx3fwfstjpox3de3c677f77b9f8d24d80b1cf025559bgg_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 15,
+            "name": "Herald 5",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f3x2f3cx2fTfbtpobmSbol2-6.qohx3fwfstjpox3d6ggdc385d3290f74fd906182d319227b_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 21,
+            "name": "Guardian 1",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2fdx2fd8x2fTfbtpobmSbol3-2.qohx3fwfstjpox3d2e9f6ce1g90979g4446gbd229c3fd7bf_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 22,
+            "name": "Guardian 2",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f3x2f3dx2fTfbtpobmSbol3-3.qohx3fwfstjpox3d216650e09dc818e613e71d834bf6762c_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 23,
+            "name": "Guardian 3",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2fgx2fg6x2fTfbtpobmSbol3-4.qohx3fwfstjpox3d569c43e87c5526395f805070b56bb72g_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 24,
+            "name": "Guardian 4",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2fcx2fc5x2fTfbtpobmSbol3-5.qohx3fwfstjpox3d7cf2fd4fegc8c5ddcgcee1e7c8f0367b_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 25,
+            "name": "Guardian 5",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f4x2f43x2fTfbtpobmSbol3-6.qohx3fwfstjpox3d65b608df6942g74b1d85g8484fb7366f_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 31,
+            "name": "Crusader 1",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f9x2f93x2fTfbtpobmSbol4-2.qohx3fwfstjpox3d4665g1be48ee5b9f27d924516c8c9060_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 32,
+            "name": "Crusader 2",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f7x2f7fx2fTfbtpobmSbol4-3.qohx3fwfstjpox3d77b6g87242cd855d2d73ce02442cf151_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 33,
+            "name": "Crusader 3",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f7x2f78x2fTfbtpobmSbol4-4.qohx3fwfstjpox3d9b509074g8gd3e1055gc06c8d5b67ef9_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 34,
+            "name": "Crusader 4",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f9x2f98x2fTfbtpobmSbol4-5.qohx3fwfstjpox3dg5300g22f88ecc94967209d96e09g76e_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 35,
+            "name": "Crusader 5",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2fcx2fc2x2fTfbtpobmSbol4-6.qohx3fwfstjpox3d7cg2g28160ebde8g0f085bde917c1477_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 41,
+            "name": "Archon 1",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f8x2f87x2fTfbtpobmSbol5-2.qohx3fwfstjpox3dc5907fd2e9dgb9b067255b2e7cg62cb1_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 42,
+            "name": "Archon 2",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f9x2f98x2fTfbtpobmSbol5-3.qohx3fwfstjpox3d4d4e985d7gcbc1581g5g3c890fe8cc79_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 43,
+            "name": "Archon 3",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f7x2f71x2fTfbtpobmSbol5-4.qohx3fwfstjpox3de5b7c34bb06d6c44fd6f65fgg55b482f_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 44,
+            "name": "Archon 4",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f5x2f5bx2fTfbtpobmSbol5-5.qohx3fwfstjpox3dg23b5966d58c08c058e17020g11gf750_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 45,
+            "name": "Archon 5",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2fbx2fb4x2fTfbtpobmSbol5-6.qohx3fwfstjpox3ddd36667g265g81c3ee4edffecge20b77_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 51,
+            "name": "Legend 1",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f8x2f80x2fTfbtpobmSbol6-2.qohx3fwfstjpox3d533ee56cg98ge1fbfg03718g7476c558_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 52,
+            "name": "Legend 2",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f6x2f63x2fTfbtpobmSbol6-3.qohx3fwfstjpox3dc7433594gfc9gggg7694ffdcf2e36bf4_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 53,
+            "name": "Legend 3",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f9x2f99x2fTfbtpobmSbol6-4.qohx3fwfstjpox3dd0eddgcc3c72b2d33088bf95bf4ef729_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 54,
+            "name": "Legend 4",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f3x2f36x2fTfbtpobmSbol6-5.qohx3fwfstjpox3dbe0g192058f8015dgcfe6dff9098be2e_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 55,
+            "name": "Legend 5",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f9x2f9fx2fTfbtpobmSbol6-6.qohx3fwfstjpox3dgb46g96gbg418483b7gd2ebedd5b2e82_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 61,
+            "name": "Ancient 1",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2ffx2ff1x2fTfbtpobmSbol7-2.qohx3fwfstjpox3de012e6094ed147df6bg3cfe092e51032_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },{
+            "id": 62,
+            "name": "Ancient 2",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f2x2f2dx2fTfbtpobmSbol7-3.qohx3fwfstjpox3d249cec98gcgbf3e8f20639fg293e1f81_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 63,
+            "name": "Ancient 3",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2fex2febx2fTfbtpobmSbol7-4.qohx3fwfstjpox3d6f2g0b805cdf945e0c8c3f27d375bb6b_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 64,
+            "name": "Ancient 4",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2fex2fecx2fTfbtpobmSbol7-5.qohx3fwfstjpox3d027dc18b2cc801978e4fdef7e34031gc_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 65,
+            "name": "Ancient 5",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f5x2f58x2fTfbtpobmSbol7-6.qohx3fwfstjpox3d817f2b6c39361g4b9210fc4ge40d4gb0_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 71,
+            "name": "Divine 1",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2fcx2fc8x2fTfbtpobmSbol8-2.qohx3fwfstjpox3d23fbfc46g72e6b60g6125b351065138b_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 72,
+            "name": "Divine 2",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f9x2f9gx2fTfbtpobmSbol8-3.qohx3fwfstjpox3d701gc162ecc730ee9cc4f7ee1ee11cge_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 73,
+            "name": "Ancient 3",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2fgx2fgex2fTfbtpobmSbol8-4.qohx3fwfstjpox3db3f68e970d964g60e606gcd09b2d7d81_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 74,
+            "name": "Ancient 4",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f2x2f24x2fTfbtpobmSbol8-5.qohx3fwfstjpox3d6f79bc6205b8778fd0472e6d1e5101eb_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        },
+        {
+            "id": 75,
+            "name": "Ancient 5",
+            "icon": "https://c-7npsfqifvt34x24e2v6q4m5x78qbz4lx2edmpvegspoux2eofu.g00.gamepedia.com/g00/3_c-7epub3.hbnfqfejb.dpn_/c-7NPSFQIFVT34x24iuuqtx3ax2fx2fe2v6q4m5x78qbz4l.dmpvegspou.ofux2fepub3_hbnfqfejbx2f4x2f44x2fTfbtpobmSbol8-6.qohx3fwfstjpox3dc82d2c732f098fe35198b218d80d9045_$/$/$/$/$?i10c.ua=1&i10c.dv=14"
+        }
+    ]
+}

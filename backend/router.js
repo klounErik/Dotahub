@@ -21,7 +21,7 @@ Router.get('/player/:id', (req, res) =>{
 })
 
 Router.get('/matches', (req, res) => {
-    fetch('https://api.opendota.com/api/players/28122613/recentmatches')
+    fetch('https://api.opendota.com/api/players/28122613/matches?limit=100')
     .then(results => results.json())
     .then(json => res.send(json))
 })
@@ -32,8 +32,8 @@ Router.get('/matchdetail/:id', (req, res) => {
     .then(json => res.send(json))
 })
 
-Router.get('/profile', (req, res) => {
-    fetch('https://api.opendota.com/api/players/28122613')
+Router.get('/profile/:id', (req, res) => {
+    fetch(`https://api.opendota.com/api/players/${req.params.id}/heroes`)
     .then(results => results.json())
     .then(json => res.send(json))
 })

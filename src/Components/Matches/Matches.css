@@ -1,3 +1,30 @@
 .table{
     background-color: #222
 }
+
+.mathces{
+    display: inline;
+    overflow-y: scroll;
+}
+
+#loader{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+}
+
+@keyframes example {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+/* The element to apply the animation to */
+#loader {
+    text-align: center;
+    color: white;
+    width: 0px;
+    height: 100px;
+    background-color: black;
+    animation-name: example;
+    animation-duration: 1s;
+}

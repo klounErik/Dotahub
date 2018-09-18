@@ -1,0 +1,36 @@
+.profileheader{
+    margin: 50px;
+    width: 30%;
+    height: 580px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+}
+.profileheader img{
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.profilesection{
+    background-color: rgb(34, 114, 194);
+    display: flex;
+    justify-content: center;
+}
+
+.tableRows{
+    font-size: 20px;
+}
+
+.table{
+    height: 200px;
+    overflow: hidden;
+}
+.playedheroes{
+    height: 500px;
+    overflow-y: scroll;
+}

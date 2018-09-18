@@ -6,22 +6,17 @@ export default class Nav extends Component{
         return(
         <div className="navbar">
         <span>
-          <a href="/home"><img src={dota} alt="dota" height={75} width={75}/>
+          <a href="/home"><img src={dota} alt="dota" height={70} width={70}/>
           </a>
         </span>
         <ul>
           <span>
-            <a href="/profile">Profile</a>
+            <a href="/profile/28122613">Profile</a>
           </span>
         </ul>
         <ul>
           <span>
             <a href="/matches">Matches</a>
-          </span>
-        </ul>
-        <ul>
-          <span>
-            <a href="/news">News</a>
           </span>
         </ul>
         <ul>

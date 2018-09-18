@@ -28,17 +28,19 @@ export default class MatchDetails extends Component {
         const res = await req.json()
         this.setState({heroes: res})
     }
-    
     /*getplayer = async (id) =>{
         const req = await fetch(`http://localhost:1234/api/player/${id}`)
         const res = await req.json()
-        return res
     }*/
-
+   
     render(){
-        const {players} = this.state
+        const {players, heroes} = this.state
+        if(players.length === 0 || heroes.length === 0){
+            return <h1 style={{textAlign: 'center'}}>Loading...</h1>
+        }
         let duration = this.state.matchdetails.duration / 60
         const radiant = players.map((players, index) =>{
+            
             let found = this.state.heroes.find(e => e.id === players.hero_id)
             let split = found.name
             let getname = split.split('npc_dota_hero_')
