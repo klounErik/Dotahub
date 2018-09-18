@@ -44,5 +44,22 @@ Router.get('/redditnews', (req, res) => {
     .then(json => res.send(json))
 })
 
+Router.get('/streams', (req, res) => {
+    fetch('https://api.twitch.tv/helix/streams/?game_id=29595',{
+            method: 'GET',
+            headers:{
+                "Client-ID": "nt60tmurnk35i1xj18lvdp8q02dhv6"
+            }}).then(result => result.json())
+            .then(json => res.send(json))   
+})
+
+Router.get('/streams/users/:id', (req, res) => {
+    fetch(`https://api.twitch.tv/helix/users?id=${req.params.id}`,{
+            method: 'GET',
+            headers:{
+                "Client-ID": 
+            }}).then(result => result.json())
+            .then(json => res.send(json))   
+})
 
 module.exports = Router

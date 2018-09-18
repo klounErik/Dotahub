@@ -51,7 +51,7 @@ export default class PlayerProfile extends Component{
             let lastPlayed = new Date(1000*hero.last_played)
             return (
             <Table.Row className="tableRows" key={index}>
-            <Table.Cell><img height={75} src={`http://cdn.dota2.com/apps/dota2/images/heroes/${findhero.name.split('npc_dota_hero_')[1]}_full.png`}></img></Table.Cell>
+            <Table.Cell><img alt="hero" height={75} src={`http://cdn.dota2.com/apps/dota2/images/heroes/${findhero.name.split('npc_dota_hero_')[1]}_full.png`}></img></Table.Cell>
             <Table.Cell>{findhero.localized_name}</Table.Cell>
             <Table.Cell>{hero.games}</Table.Cell>
             <Table.Cell>{winChance.toPrecision(4)}%</Table.Cell>
@@ -70,7 +70,7 @@ export default class PlayerProfile extends Component{
                 <h1>{profile.profile.personaname}</h1>
                 </span>
                 </article>
-                <img height={100} width={100} title={found.name} src={found.icon}></img>
+                <img alt="rank" height={100} width={100} title={found.name} src={found.icon}></img>
                 <span>
                 <h4>Estimated MMR: {profile.mmr_estimate.estimate}</h4>
                 <span>

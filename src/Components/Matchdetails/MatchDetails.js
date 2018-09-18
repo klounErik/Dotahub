@@ -40,7 +40,6 @@ export default class MatchDetails extends Component {
         }
         let duration = this.state.matchdetails.duration / 60
         const radiant = players.map((players, index) =>{
-            
             let found = this.state.heroes.find(e => e.id === players.hero_id)
             let split = found.name
             let getname = split.split('npc_dota_hero_')
@@ -62,6 +61,7 @@ export default class MatchDetails extends Component {
                     </Table.Row>
                 )
             }
+            return null
         })
         const dire = players.map((players, index) =>{
             let found = this.state.heroes.find(e => e.id === players.hero_id)
@@ -86,6 +86,7 @@ export default class MatchDetails extends Component {
                     </Table.Row>
                 )
             }
+            return null
         })
         return(
         <div className="matchdetails">

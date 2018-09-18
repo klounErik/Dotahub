@@ -24,6 +24,11 @@ export default class Nav extends Component{
             <a href="/updates">Updates</a>
           </span>
         </ul>
+        <ul>
+          <span>
+            <a href="/streams">Streams</a>
+          </span>
+        </ul>
       </div>
         )
     }
