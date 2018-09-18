@@ -38,4 +38,11 @@ Router.get('/profile/:id', (req, res) => {
     .then(json => res.send(json))
 })
 
+Router.get('/redditnews', (req, res) => {
+    fetch(`https://www.reddit.com/r/dota2.json`)
+    .then(results => results.json())
+    .then(json => res.send(json))
+})
+
+
 module.exports = Router
