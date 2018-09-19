@@ -1,2 +1,2 @@
-# Matchtracker
-Tracking of  Dota 2 matches, stats, profiles etc
+# DotaHub
+All the Dotes in one place
