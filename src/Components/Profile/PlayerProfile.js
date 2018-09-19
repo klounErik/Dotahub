@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './PlayerProfile.css'
 import { Table } from 'semantic-ui-react'
+import Matches from './Matches/Matches'
 import SteamIcon from '../../Images/steam-icon.png'
 import Loader from '../Loader/Loader'
 import DotabuffIcon from '../../Images/dotabuff-logo.png'
@@ -13,34 +14,18 @@ export default class PlayerProfile extends Component{
         playerheroes: [],
         heroes: []
     }
-
-    getPlayerInfo = async () => {
-        const req = await fetch(`http://localhost:1234/api/player/${this.props.match.params.id}`)
-        const res = await req.json()
-        this.setState({profile: res})
-      }
-
-    gethero = async () => {
-        const req = await fetch('http://localhost:1234/api/heroes')
-        const res = await req.json()
-        this.setState({heroes: res})
-    }
-    
-    getPlayerHeroes = async () => {
-        const req = await fetch(`http://localhost:1234/api/profile/${this.props.match.params.id}`)
-        const res = await req.json()
-        this.setState({playerheroes: res})
-    }  
-
     componentDidMount(){
-        this.getPlayerInfo()
-        this.getPlayerHeroes()
-        this.gethero()
+        this.props.getPlayerInfo(this.props.match.params.id)
+        .then(res => this.setState({profile: res}))
+        this.props.getPlayerHeroes(this.props.match.params.id)
+        .then(res => this.setState({playerheroes: res}))
+        this.props.gethero()
+        .then(res => this.setState({heroes: res}))
     }
 
     render(){
         const {profile, playerheroes, heroes} = this.state
-        console.log(profile)
+        console.log(this.props)
         if(profile.length === 0 || heroes.length === 0 || playerheroes.length === 0){
             return <Loader/>
         }
@@ -82,7 +67,13 @@ export default class PlayerProfile extends Component{
                 </span>
                 </header>
                 </section>
+                <div className="tablecontainer">
+                <section className="matches">
+                <h1>Recent Matches</h1>
+                <Matches gethero={this.props.gethero} getMatches={this.props.getMatches} id={this.props.match.params.id}/>
+                </section>
                 <section className="playedheroes">
+                <h1>Most Played Heroes</h1>
                 <Table className="table" inverted selectable>
                 <Table.Header>
                 <Table.Row>
@@ -98,6 +89,7 @@ export default class PlayerProfile extends Component{
                 </Table.Body>
                 </Table>
                 </section>
+                </div>
                 </div>
         )
     }

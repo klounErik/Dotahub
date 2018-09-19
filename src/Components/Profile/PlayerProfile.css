@@ -22,15 +22,17 @@
     justify-content: center;
 }
 
-.tableRows{
-    font-size: 20px;
+.tablecontainer{
+    background-color: #222;
+    color: white;
+    display: flex;
+    text-align: center;
 }
 
-.table{
-    height: 200px;
-    overflow: hidden;
-}
 .playedheroes{
-    height: 500px;
-    overflow-y: scroll;
+    width: 100%;
+}
+.tablebody{
+    background-color: #222;
+    font-size: 20px;
 }

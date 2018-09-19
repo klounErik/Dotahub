@@ -20,8 +20,8 @@ Router.get('/player/:id', (req, res) =>{
     .then(json => res.send(json))
 })
 
-Router.get('/matches', (req, res) => {
-    fetch('https://api.opendota.com/api/players/28122613/matches?limit=100')
+Router.get('/matches/:id', (req, res) => {
+    fetch(`https://api.opendota.com/api/players/${req.params.id}/matches?limit=100`)
     .then(results => results.json())
     .then(json => res.send(json))
 })

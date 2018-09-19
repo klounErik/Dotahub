@@ -6,15 +6,9 @@ export default class Updates extends Component{
         updates: []
     }
 
-    getUpdates = async () =>{
-        const req = await fetch('http://localhost:1234/api/updates')
-        const res = await req.json()
-        this.setState({updates: res.appnews.newsitems})
-        console.log(res.appnews.newsitems)
-    }
-
     componentDidMount(){
-        this.getUpdates()
+        this.props.getUpdates()
+        .then(res => this.setState({updates: res.appnews.newsitems}))
     }
 
     render(){

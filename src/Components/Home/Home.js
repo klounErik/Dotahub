@@ -5,15 +5,9 @@ export default class Home extends Component{
         news: []
     }
 
-
-    getNews = async () =>{
-        fetch('http://localhost:1234/api/redditnews')
-        .then(res => res.json())
-        .then(json => this.setState({news: json}))
-    }
-
     componentDidMount(){
-        this.getNews()
+        this.props.getNews()
+        .then(res => this.setState({news: res}))
     }
 
     render(){
@@ -21,7 +15,6 @@ export default class Home extends Component{
         if(this.state.news.length === 0){
             return null
         }
-        console.log('Hello world' + news)
         const liste = news.data.children.map((news, index) =>{
             return <ul key={index}>{news.data.score}<a href={news.data.url} key={index}>{news.data.title}</a></ul>
         })

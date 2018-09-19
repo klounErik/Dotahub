@@ -16,11 +16,6 @@ export default class Nav extends Component{
         </ul>
         <ul>
           <span>
-            <a href="/matches">Matches</a>
-          </span>
-        </ul>
-        <ul>
-          <span>
             <a href="/updates">Updates</a>
           </span>
         </ul>

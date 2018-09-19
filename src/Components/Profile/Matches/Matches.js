@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Table } from 'semantic-ui-react'
-import Loader from '../Loader/Loader'
-import Gamemode from '../../Data/Gamemode.json'
+import Loader from '../../Loader/Loader'
+import Gamemode from '../../../Data/Gamemode.json'
 import './Matches.css'
 
 export default class Matches extends Component{
@@ -9,39 +9,22 @@ export default class Matches extends Component{
             matches: [],
             heroes: []
         }
-
-    getMatches = async () => {
-       const req =  await fetch('http://localhost:1234/api/matches')
-       const res = await req.json()
-       this.setState({matches: res})
-    }
-
-    
-    gethero = async () => {
-        const req = await fetch('http://localhost:1234/api/heroes')
-        const res = await req.json()
-        this.setState({heroes: res})
-    }
     
     componentDidMount(){
-        this.getMatches()
-        this.gethero()
-    }
-
-    componentWillMount(){
-        this.gethero()
+        this.props.getMatches(this.props.id)
+        .then(res => this.setState({matches: res}))
+        this.props.gethero()
+        .then(res => this.setState({heroes: res}))
     }
     
     render(){
       const {matches, heroes} = this.state
-      console.log(matches)
       let skill
       let lobby_type;
       if(matches.length === 0 || heroes.length === 0){
           return <Loader/>
       }
       const list = matches.map((matches, index) =>{
-        
         let found = heroes.find(e => e.id === matches.hero_id)
         let split = found.name
         let getname = split.split('npc_dota_hero_')
@@ -85,15 +68,12 @@ export default class Matches extends Component{
         <Table.Cell>{matches.kills}</Table.Cell>
         <Table.Cell>{matches.deaths}</Table.Cell>
         <Table.Cell>{matches.assists}</Table.Cell>
-        <Table.Cell>{matches.gold_per_min}</Table.Cell>
-        <Table.Cell>{matches.xp_per_min}</Table.Cell>
         <Table.Cell>{skill}</Table.Cell>
         <Table.Cell>{time.toPrecision(2)} Minutes</Table.Cell>
         <Table.Cell>{startTime.toLocaleString('de-DE')}</Table.Cell>
         </Table.Row>
         )
       })
-
         return( 
             <div className="mathces">
              <Table inverted selectable>
@@ -107,8 +87,6 @@ export default class Matches extends Component{
                   <Table.HeaderCell>Kills</Table.HeaderCell>
                   <Table.HeaderCell>Deaths</Table.HeaderCell>
                   <Table.HeaderCell>Assists</Table.HeaderCell>
-                  <Table.HeaderCell>GPM</Table.HeaderCell>
-                  <Table.HeaderCell>XPM</Table.HeaderCell>
                   <Table.HeaderCell>Skill</Table.HeaderCell>
                   <Table.HeaderCell>Duration</Table.HeaderCell>
                   <Table.HeaderCell>Date</Table.HeaderCell>
