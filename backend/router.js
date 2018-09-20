@@ -60,4 +60,10 @@ Router.get('/dotaupdate', (req, res) =>{
 
 })
 
+Router.get('/search/:id',(req,res) =>{
+    fetch(`https://api.opendota.com/api/search/?q=${req.params.id}`)
+    .then(result => result.json())
+    .then(json => res.send(json))
+})
+
 module.exports = Router

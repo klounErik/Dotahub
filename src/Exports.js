@@ -4,6 +4,12 @@
         const res = await req.json()
         return res
      }
+
+     export const search = async (id) =>{
+         const req = await fetch(`http://localhost:1234/api/search/${id}`)
+         const res = await req.json()
+         return res
+     }
  
      export const getMatchDetails = async (id) => {
         const req = await fetch(`http://localhost:1234/api/matchdetail/${id}`)

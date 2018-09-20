@@ -1,0 +1,23 @@
+
+.searchWrapper{
+    padding: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.searchWrapper ul{
+    margin: 0px;
+}
+.searchContainer{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin: 50px;
+}
+.searchContainer a ul img{
+    margin: 0px;
+    padding: 0px;
+}

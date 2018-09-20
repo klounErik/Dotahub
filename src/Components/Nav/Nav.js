@@ -1,8 +1,16 @@
 import React, {Component} from 'react'
 import dota from '../../Images/dota.png'
+import { Input } from 'antd';
 import './Nav.css'
 
+const Search = Input.Search;
+
 export default class Nav extends Component{
+    search = (id) =>{
+      this.props.search(id)
+      .then(result => this.props.getResult(result))
+    }
+
     render(){
         return(
         <div className="navbar">
@@ -30,6 +38,13 @@ export default class Nav extends Component{
             <a href="/favouritestreams">Favourite Streams</a>
           </span>
         </ul>
+        <div className="search">
+        <Search
+          placeholder="Search Player..."
+          onSearch={test => this.search(test)}
+          style={{ width: 200 }}
+          />
+        </div>
       </div>
         )
     }
