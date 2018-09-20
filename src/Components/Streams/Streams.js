@@ -20,10 +20,9 @@ export default class Streams extends Component{
     render(){
         const {streams} = this.state
         if(streams.length === 0){
-            return <Loader/>
-        }
+            return <h1>Loading....</h1>
+        } 
         const liste = streams.data.map((stream, index) =>{
-            console.log(stream)
             let thumbnail = stream.thumbnail_url.split('{width}x{height}')
             let newThumbnail = thumbnail[0]+'350x200'+thumbnail[1]
             return(
