@@ -2,4 +2,4 @@
 All the Dotes in one place
 
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text]https://github.com/klounErik/Dotahub/blob/master/profile.PNG
