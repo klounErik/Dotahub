@@ -19,8 +19,9 @@ export default class Matches extends Component{
     
     render(){
       const {matches, heroes} = this.state
+      console.log(matches)
       let skill
-      let lobby_type;
+      let lobby_type
       if(matches.length === 0 || heroes.length === 0){
           return <Loader/>
       }
@@ -28,7 +29,8 @@ export default class Matches extends Component{
         let found = heroes.find(e => e.id === matches.hero_id)
         let split = found.name
         let getname = split.split('npc_dota_hero_')
-        let time = matches.duration / 60
+        let minutes = Math.floor(matches.duration / 60.0)
+        let seconds = matches.duration - minutes * 60.0
         let startTime =  new Date(1000*matches.start_time)
 
         switch(matches.skill){
@@ -69,15 +71,16 @@ export default class Matches extends Component{
         <Table.Cell>{matches.deaths}</Table.Cell>
         <Table.Cell>{matches.assists}</Table.Cell>
         <Table.Cell>{skill}</Table.Cell>
-        <Table.Cell>{time.toPrecision(2)} Minutes</Table.Cell>
+        <Table.Cell>{minutes}:{seconds}</Table.Cell>
         <Table.Cell>{startTime.toLocaleString('de-DE')}</Table.Cell>
         </Table.Row>
         )
       })
         return( 
+            <div>
             <div className="mathces">
-             <Table inverted selectable>
-              <Table.Header>
+             <Table className="table" inverted selectable>
+                <Table.Header>
                 <Table.Row>
                 <Table.HeaderCell>Match</Table.HeaderCell>
                 <Table.HeaderCell>Gamemode</Table.HeaderCell>
@@ -90,12 +93,13 @@ export default class Matches extends Component{
                   <Table.HeaderCell>Skill</Table.HeaderCell>
                   <Table.HeaderCell>Duration</Table.HeaderCell>
                   <Table.HeaderCell>Date</Table.HeaderCell>
-                </Table.Row>
-              </Table.Header>
+                    </Table.Row>
+                 </Table.Header>
               <Table.Body className="table">
                   {list}
               </Table.Body>
             </Table>
+            </div>
             </div>
         )
     }

@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
 import dota from '../../Images/dota.png'
+import './Nav.css'
 
 export default class Nav extends Component{
     render(){
         return(
         <div className="navbar">
         <span>
-          <a href="/home"><img src={dota} alt="dota" height={70} width={70}/>
+          <a href="/home"><img className="logo" src={dota} alt="dota"/>
           </a>
         </span>
         <ul>

@@ -1,6 +1,13 @@
+.wrapper{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .streamcontainer{
-    display: inline-block;
+    margin: 10px;
     width: 350px;
-    margin: 50px;
+    height: 300px;
     text-align: center;
 }

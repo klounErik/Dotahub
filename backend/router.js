@@ -9,7 +9,7 @@ Router.get('/heroes', (req, res) => {
 })
 
 Router.get('/updates', (req, res) => {
-    fetch('http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=570&count=10&maxlength=100&format=json')
+    fetch('http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=570&count=20&maxlength=100&format=json')
     .then(json => json.json())
     .then(result => res.send(result))
 })
@@ -45,16 +45,7 @@ Router.get('/redditnews', (req, res) => {
 })
 
 Router.get('/streams', (req, res) => {
-    fetch('https://api.twitch.tv/helix/streams/?game_id=29595',{
-            method: 'GET',
-            headers:{
-                "Client-ID": 
-            }}).then(result => result.json())
-            .then(json => res.send(json))   
-})
-
-Router.get('/streams/users/:id', (req, res) => {
-    fetch(`https://api.twitch.tv/helix/users?id=${req.params.id}`,{
+    fetch('https://api.twitch.tv/helix/streams/?game_id=29595&language=en',{
             method: 'GET',
             headers:{
                 "Client-ID": 

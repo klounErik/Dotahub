@@ -25,7 +25,7 @@ export default class PlayerProfile extends Component{
 
     render(){
         const {profile, playerheroes, heroes} = this.state
-        console.log(this.props)
+        console.log(profile)
         if(profile.length === 0 || heroes.length === 0 || playerheroes.length === 0){
             return <Loader/>
         }
@@ -36,7 +36,7 @@ export default class PlayerProfile extends Component{
             let lastPlayed = new Date(1000*hero.last_played)
             return (
             <Table.Row className="tableRows" key={index}>
-            <Table.Cell><img alt="hero" height={75} src={`http://cdn.dota2.com/apps/dota2/images/heroes/${findhero.name.split('npc_dota_hero_')[1]}_full.png`}></img></Table.Cell>
+            <Table.Cell><img alt="hero" height={50} src={`http://cdn.dota2.com/apps/dota2/images/heroes/${findhero.name.split('npc_dota_hero_')[1]}_full.png`}></img></Table.Cell>
             <Table.Cell>{findhero.localized_name}</Table.Cell>
             <Table.Cell>{hero.games}</Table.Cell>
             <Table.Cell>{winChance.toPrecision(4)}%</Table.Cell>
@@ -49,7 +49,8 @@ export default class PlayerProfile extends Component{
             <div className="playerprofile">
                 <section className="profilesection">
                 <header className="profileheader">
-                <img alt="Avatar" src={profile.profile.avatarfull}/>
+                <div className="profileContainer">
+                <img className="profilepic" alt="Avatar" src={profile.profile.avatarfull}/>
                 <article>
                 <span>
                 <h1>{profile.profile.personaname}</h1>
@@ -65,12 +66,13 @@ export default class PlayerProfile extends Component{
                     </article>
                 </span>
                 </span>
+                </div>
                 </header>
                 </section>
                 <div className="tablecontainer">
                 <section className="matches">
                 <h1>Recent Matches</h1>
-                <Matches gethero={this.props.gethero} getMatches={this.props.getMatches} id={this.props.match.params.id}/>
+                <Matches gethero={this.props.gethero} getMatchDetails={this.props.getMatchDetails} getMatches={this.props.getMatches} id={this.props.match.params.id}/>
                 </section>
                 <section className="playedheroes">
                 <h1>Most Played Heroes</h1>

@@ -17,5 +17,9 @@
 }
 
 .navbar a:hover{
-    color: dodgerblue;
+    color: rgb(192, 17, 17);
+}
+
+*{
+    font-family: 'Julius Sans One', sans-serif;
 }

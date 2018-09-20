@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import './Updates.css'
 
 export default class Updates extends Component{
     state = {
@@ -13,13 +13,18 @@ export default class Updates extends Component{
 
     render(){
         const {updates} = this.state
-        const liste = updates.map((news, index) =>{
+        console.log(updates)
+        const gameUpdates = updates.map((news, index) =>{
             let date = new Date(1000*news.date)
-            return <ul key={index}><a href={news.url}>{news.title}</a> {date.toDateString()}</ul>
+            if(news.feedlabel === "Product Update")
+            return (
+            <div key={index}>
+            <ul key={index}><a href={news.url}>{news.title}</a>{date.toDateString()}</ul>
+            </div>)
         })
         return(
-            <div>
-            {liste}
+            <div className="newscontainer">
+            {gameUpdates}
             </div>
         )
     }

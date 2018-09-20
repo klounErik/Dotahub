@@ -1,12 +1,8 @@
 .table{
-    background-color: #222
+    background-color: #222;
+    font-size: 15px;
+    text-align: center;
 }
-
-.mathces{
-    display: inline;
-    overflow-y: scroll;
-}
-
 #loader{
     height: 200px;
     width: 100%;
@@ -18,7 +14,6 @@
     to {width: 100%;}
 }
 
-/* The element to apply the animation to */
 #loader {
     text-align: center;
     color: white;

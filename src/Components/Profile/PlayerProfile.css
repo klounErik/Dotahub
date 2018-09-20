@@ -1,38 +1,57 @@
-.profileheader{
+.profileContainer{
     margin: 50px;
-    width: 30%;
-    height: 580px;
-    border-radius: 5px;
+    width: 80%;
+    height: 450px;
+    border-radius: 10px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #222;
+    background-image: url(../../Images/header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.playerprofile{
+    background-image: url('../../Images//dota2background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.profilepic{
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
 }
 .profileheader img{
     margin: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
 }
 
 .profilesection{
-    background-color: rgb(34, 114, 194);
     display: flex;
     justify-content: center;
 }
+.matches{
+    height: 500px;
+    overflow-y: scroll;
+    margin-bottom: 100px;
+}
 
 .tablecontainer{
-    background-color: #222;
+    width: 70%;
+    margin-left: 300px;
     color: white;
-    display: flex;
-    text-align: center;
 }
 
 .playedheroes{
-    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
 }
 .tablebody{
     background-color: #222;
-    font-size: 20px;
+    font-size: 15px;
 }

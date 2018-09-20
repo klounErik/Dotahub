@@ -12,33 +12,21 @@ export default class MatchDetails extends Component {
     }
 
     componentDidMount(){
-        this.gethero()
-        this.getMatchDetails()
+        this.props.getMatchDetails(this.props.match.params.matchid)
+        .then(res => this.setState({
+            matchdetails: res,
+            players: res.players
+        }))
+        this.props.gethero()
+        .then(res => this.setState({heroes: res}))
     }
-
-    getMatchDetails = async () => {
-        const req = await fetch(`http://localhost:1234/api/matchdetail/${this.props.match.params.matchid}`)
-        const res = await req.json()
-        this.setState({matchdetails: res})
-        this.setState({players: res.players})
-    }
-
-    gethero = async () => {
-        const req = await fetch('http://localhost:1234/api/heroes')
-        const res = await req.json()
-        this.setState({heroes: res})
-    }
-    /*getplayer = async (id) =>{
-        const req = await fetch(`http://localhost:1234/api/player/${id}`)
-        const res = await req.json()
-    }*/
-   
     render(){
-        const {players, heroes} = this.state
+        const {players, heroes ,matchdetails} = this.state
         if(players.length === 0 || heroes.length === 0){
             return <h1 style={{textAlign: 'center'}}>Loading...</h1>
         }
-        let duration = this.state.matchdetails.duration / 60
+        let minutes = Math.floor(matchdetails.duration / 60)
+        let seconds = matchdetails.duration - minutes * 60
         const radiant = players.map((players, index) =>{
             let found = this.state.heroes.find(e => e.id === players.hero_id)
             let split = found.name
@@ -91,18 +79,29 @@ export default class MatchDetails extends Component {
         return(
         <div className="matchdetails">
         <header className="headerWrapper">
+        <div className="score">
         <div className="radiant">
-            <img src={Radiant} height={100} width={100} alt="radiant"/>
-            <h1>{this.state.matchdetails.radiant_score}</h1>
+            <img src={Radiant} alt="radiant"/>
+            <span>
+            <h2>{this.state.matchdetails.radiant_score}</h2>
+            </span>
             </div>
-            <h1>{duration.toPrecision(2)} Minutes</h1>
+            <article>
+            <span>
+            <h2>{minutes}:{seconds}</h2>
+            </span>
+            </article>
             <div className="dire">
-            <img src={Dire} height={100} width={100} alt="dire"/>
-            <h1>{this.state.matchdetails.dire_score}</h1>
-                </div>
+            <img src={Dire} alt="dire"/>
+            <span>
+            <h2>{this.state.matchdetails.dire_score}</h2>
+            </span>
+            </div>
+            </div>
         </header>
         <div className="matchContainer">
             <div className="radiantside">
+            <h1>The Radiant {matchdetails.radiant_win ? "- Winner" : null}</h1>
            <Table inverted selectable>
               <Table.Header>
                 <Table.Row>
@@ -125,6 +124,7 @@ export default class MatchDetails extends Component {
                 </Table>
                 </div>
                 <div className="direside">
+                <h1>The Dire{matchdetails.radiant_win ? null : " - Winner"}</h1>
                 <Table inverted selectable>
                 <Table.Header>
                 <Table.Row>

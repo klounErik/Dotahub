@@ -5,6 +5,12 @@
         return res
      }
  
+     export const getMatchDetails = async (id) => {
+        const req = await fetch(`http://localhost:1234/api/matchdetail/${id}`)
+        const res = await req.json()
+        return res
+    }
+
      export const gethero = async () => {
          const req = await fetch('http://localhost:1234/api/heroes')
          const res = await req.json()

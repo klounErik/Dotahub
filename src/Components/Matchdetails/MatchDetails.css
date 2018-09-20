@@ -1,30 +1,39 @@
 .matchdetails{
+    background-image: url(../../Images/dota2background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
+    background-position: center;
+    color: white;
 }
 
 .headerWrapper{
-    background-color: dodgerblue;
     display: flex;
     justify-content: center;
 }
 
-.gameScore{
+.score{
+    margin: 20px;
     display: flex;
 }
 
-.dire{
-    text-align: center;
-    margin: 50px;
-}
-.radiant{
-    text-align: center;
-    margin: 50px;
+.score article{
+    margin: 30px;
+}   
+
+.score img{
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
 }
 
-.dire img{
-    border-radius: 50px;
+.radiantside{
+    width: 80%;
+    margin-bottom: 10px;
+    margin-left: 200px;
 }
 
-.radiant img{
-    border-radius: 50px;
+.direside{
+    width: 80%;
+    margin-left: 200px;
 }

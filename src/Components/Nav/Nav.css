@@ -1,0 +1,13 @@
+.navbar{
+    background-image: url(../../Images/header.png);
+    background-position: center;
+}
+
+.logo{
+    height: 100px;
+    margin: 0px;
+}
+
+.navbar a {
+    margin: 0px;
+}
