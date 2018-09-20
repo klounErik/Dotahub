@@ -1,0 +1,13 @@
+.home{
+    padding: 200px;
+    color: white;
+    background-color: black;
+}
+
+.postContainer{
+    display: flex;
+}
+.home ul {
+    margin: 10px;
+    padding: 0px;
+}

@@ -1,8 +1,8 @@
 .matchdetails{
+    padding: 150px;
     background-image: url(../../Images/dota2background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
     background-position: center;
     color: white;
 }
@@ -14,6 +14,7 @@
 
 .score{
     margin: 20px;
+    text-align: center;
     display: flex;
 }
 

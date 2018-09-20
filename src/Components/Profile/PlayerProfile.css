@@ -16,6 +16,7 @@
 }
 
 .playerprofile{
+    padding: 100px;
     background-image: url('../../Images//dota2background.jpg');
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './Home.css'
 
 export default class Home extends Component{
     state = {
@@ -16,7 +17,13 @@ export default class Home extends Component{
             return null
         }
         const liste = news.data.children.map((news, index) =>{
-            return <ul key={index}>{news.data.score}<a href={news.data.url} key={index}>{news.data.title}</a></ul>
+            return (<div key={index} className="postContainer">
+            <ul>{news.data.score}</ul>
+            <ul><a href={news.data.url}>{news.data.title}</a></ul>
+            <ul>{news.data.author}</ul>
+            <ul>{news.data.link_flair_text}</ul>
+            </div>
+            )
         })
         console.log(this.state.news.data.children)
         return(<div className="home">

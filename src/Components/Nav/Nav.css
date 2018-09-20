@@ -1,4 +1,5 @@
 .navbar{
+    position: fixed;
     background-image: url(../../Images/header.png);
     background-position: center;
 }

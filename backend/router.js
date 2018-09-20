@@ -48,9 +48,16 @@ Router.get('/streams', (req, res) => {
     fetch('https://api.twitch.tv/helix/streams/?game_id=29595&language=en',{
             method: 'GET',
             headers:{
-                "Client-ID": 
+                "Client-ID": ""
             }}).then(result => result.json())
             .then(json => res.send(json))   
+})
+
+Router.get('/dotaupdate', (req, res) =>{
+    fetch('http://www.dota2.com/news/updates/')
+    .then(result => result.text())
+    .then(txt => res.send(txt))
+
 })
 
 module.exports = Router

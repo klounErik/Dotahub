@@ -25,6 +25,11 @@ export default class Nav extends Component{
             <a href="/streams">Streams</a>
           </span>
         </ul>
+        <ul>
+          <span>
+            <a href="/favouritestreams">Favourite Streams</a>
+          </span>
+        </ul>
       </div>
         )
     }

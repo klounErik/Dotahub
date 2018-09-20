@@ -4,6 +4,7 @@ import {getMatches, gethero, getNews, getUpdates, getPlayerInfo, getPlayerHeroes
 import MatchDetails from './Components/Matchdetails/MatchDetails'
 import Profile from './Components/Profile/PlayerProfile'
 import Matches from './Components/Profile/Matches/Matches'
+import FavouriteStreams from './Components/Streams/Favouritestreams/FavouriteStreams'
 import Updates from './Components/Updates/Updates'
 import Streams from './Components/Streams/Streams'
 import Home from './Components/Home/Home'
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path="/profile/:id" render={props =><Profile {...props} getMatches={getMatches} getPlayerInfo={getPlayerInfo} gethero={gethero} getPlayerHeroes={getPlayerHeroes}/>}/>
           <Route path="/home" render={props =><Home {...props} getNews={getNews}/>}/>
           <Route path="/streams" component={Streams}/>
+          <Route path="/favouritestreams" component={FavouriteStreams}/>
           </div>
         </Router>
     );
