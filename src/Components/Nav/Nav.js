@@ -25,7 +25,7 @@ export default class Nav extends Component{
         </ul>
         <ul>
           <span>
-            <a href="/updates">Updates</a>
+            <a href="/updates">Patch Notes</a>
           </span>
         </ul>
         <ul>

@@ -30,34 +30,41 @@ export default class Updates extends Component{
         const content2 = update[2].innerHTML
         const content3 = update[3].innerHTML
         const content4 = update[4].innerHTML
-        const splitcontent = content.split('<br>')
-        const splitcontent1 = content1.split('<br>')
-        const splitcontent2 = content2.split('<br>')
-        const splitcontent3 = content3.split('<br>')
-        const splitcontent4 = content4.split('<br>')
-        console.log(splitcontent)
-        const liste = splitcontent.map((a, b) =>{
-            return <ul key={b}>{a}</ul>
-        })
-        const liste1 = splitcontent1.map((a, b) =>{
+        const splitcontentA = content.split('<br>')
+        const splitcontentB = content1.split('<br>')
+        const splitcontentC = content2.split('<br>')
+        const splitcontentD = content3.split('<br>')
+        const splitcontentE = content4.split('<br>')
+        
+        const liste = splitcontentA.map((a, b) =>{
+            let c = a.split('<br clear="left">')
             return (<div key={b}>
-            <ul>{a}</ul>
+            <ul>{c[0].split('*')}</ul>
             </div>)
         })
-        const liste2 = splitcontent2.map((a, b) =>{
+        const liste1 = splitcontentB.map((a, b) =>{
+            let c = a.split('<br clear="left">')
             return (<div key={b}>
-                <ul>{a}</ul>
-                </div>)
+            <ul>{c[0].split('*')}</ul>
+            </div>)
         })
-        const liste3 = splitcontent3.map((a, b) =>{
+        const liste2 = splitcontentC.map((a, b) =>{
+            let c = a.split('<br clear="left">')
             return (<div key={b}>
-                <ul>{a}</ul>
-                </div>)
+            <ul>{c[0].split('*')}</ul>
+            </div>)
         })
-        const liste4 = splitcontent4.map((a, b) =>{
+        const liste3 = splitcontentD.map((a, b) =>{
+            let c = a.split('<br clear="left">')
             return (<div key={b}>
-                <ul>{a}</ul>
-                </div>)
+            <ul>{c[0].split('*')}</ul>
+            </div>)
+        })
+        const liste4 = splitcontentE.map((a, b) =>{
+            let c = a.split('<br clear="left">')
+            return (<div key={b}>
+            <ul>{c[0].split('*')}</ul>
+            </div>)
         })
         return(
             <div className="newsWrapper">
