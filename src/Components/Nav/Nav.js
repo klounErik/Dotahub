@@ -39,11 +39,6 @@ export default class Nav extends Component{
           </span>
         </ul>
         <div className="search">
-        <Search
-          placeholder="Search Player..."
-          onSearch={test => this.search(test)}
-          style={{ width: 200 }}
-          />
         </div>
       </div>
         )

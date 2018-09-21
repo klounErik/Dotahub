@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import './Streams.css'
-import Loader from '../Loader/Loader';
 
 export default class Streams extends Component{
     state ={

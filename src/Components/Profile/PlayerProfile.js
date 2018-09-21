@@ -14,6 +14,7 @@ export default class PlayerProfile extends Component{
         playerheroes: [],
         heroes: []
     }
+    
     componentDidMount(){
         this.props.getPlayerInfo(this.props.match.params.id)
         .then(res => this.setState({profile: res}))

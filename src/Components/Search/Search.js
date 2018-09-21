@@ -6,7 +6,8 @@ export default class Search extends Component{
     state = {
         result: []
     }
-    
+  
+
     componentWillReceiveProps(){
         this.setState({result: this.props.result})
         console.log(this.state.result)
@@ -14,15 +15,12 @@ export default class Search extends Component{
  
     render(){
         const {result} = this.state
-        if(result.length === 0){
-            return null
-        }
         const liste = result.map((result, index) =>{
             console.log(result)
             return (
             <div key={index} className="searchContainer">
             <a href={`/profile/${result.account_id}`}>
-            <img height={50} src={result.avatarfull}/>
+            <img alt="" height={50} src={result.avatarfull}/>
             <ul>{result.personaname}</ul>
             </a>
             </div>

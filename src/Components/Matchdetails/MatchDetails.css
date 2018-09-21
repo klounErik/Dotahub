@@ -29,12 +29,43 @@
 }
 
 .radiantside{
-    width: 80%;
+    width: 90%;
     margin-bottom: 10px;
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .direside{
+    width: 90%;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.chart{
+    text-align: center;
     width: 80%;
-    margin-left: 200px;
+    padding: 25px;
+    margin: 40px;
+    margin-left: 190px;
+    background-color: #222;
+}
+
+.bans{
+    margin: 15px;
+}
+
+.matchContainer h2{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.bannedContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.chart h1{
+    margin: 0px;
+    padding: 0px;
 }
