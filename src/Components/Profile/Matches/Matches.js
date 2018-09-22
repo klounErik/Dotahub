@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import { Table } from 'semantic-ui-react'
-import Loader from '../../Loader/Loader'
 import Gamemode from '../../../Data/Gamemode.json'
 import './Matches.css'
 
@@ -19,11 +18,10 @@ export default class Matches extends Component{
     
     render(){
       const {matches, heroes} = this.state
-      console.log(matches)
       let skill
       let lobby_type
       if(matches.length === 0 || heroes.length === 0){
-          return <Loader/>
+          return <h1 id="recentMatchesLoading">Loading...</h1>
       }
       const list = matches.map((matches, index) =>{
         let found = heroes.find(e => e.id === matches.hero_id)

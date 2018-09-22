@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import './Updates.css'
-import Loader from '../Loader/Loader';
 
 export default class Updates extends Component{
     state = {
@@ -20,7 +19,7 @@ export default class Updates extends Component{
 
     render(){
         if(this.state.html.length === 0){
-            return <Loader/>
+            return <h1>Loading...</h1>
         }
         const parser = new DOMParser()
         const htmlDoc = parser.parseFromString(this.state.html, "text/html")

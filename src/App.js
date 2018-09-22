@@ -13,21 +13,12 @@ import Nav from './Components/Nav/Nav'
 import './App.css';
 
 class App extends Component {
-
-  state = {
-    result: ''
-  }
-
-  getResult = (result) =>{
-    this.setState({result: result})
-  }
-
   render() {
   return (
           <Router>
           <div className="App">
-          <Route path="/" render={props => <Nav {...props} getResult={this.getResult} search={search} />}/>
-          <Route path="/search" render={props => <Search result={this.state.result} {...props} />}/>
+          <Route path="/" render={props => <Nav {...props}/>}/>
+          <Route path="/search/:id" render={props => <Search {...props} search={search} />}/>
           <Route path="/updates" render={props => <Updates {...props} getUpdates={getUpdates} />} />
           <Route path="/matches/:id" render={props => <Matches {...props} getMatches={getMatches} gethero={gethero} />} />
           <Route path="/matchdetails/:matchid" render={props =><MatchDetails getMatchDetails={getMatchDetails} gethero={gethero} {...props}/>}/>

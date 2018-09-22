@@ -17,15 +17,16 @@ export default class Home extends Component{
             return null
         }
         const liste = news.data.children.map((news, index) =>{
+            let url = news.data.url.split('')
+            let findPic = url[url.length - 1]
             return (<div key={index} className="postContainer">
             <ul>{news.data.score}</ul>
             <ul><a href={news.data.url}>{news.data.title}</a></ul>
-            <ul>{news.data.author}</ul>
-            <ul>{news.data.link_flair_text}</ul>
+            {findPic === 'g' ? <img alt="redditpost" height={350} width={500} src={news.data.url}/> : <span/>}
+            
             </div>
             )
         })
-        console.log(this.state.news.data.children)
         return(<div className="home">
             {liste}
         </div>)

@@ -2,32 +2,33 @@ import React, {Component} from 'react'
 import './Search.css'
 
 export default class Search extends Component{
-
-    state = {
-        result: []
+    state ={
+        search: []
     }
-  
 
-    componentWillReceiveProps(){
-        this.setState({result: this.props.result})
-        console.log(this.state.result)
+
+    componentDidMount(){
+        this.props.search(this.props.match.params.id)
+        .then(res => this.setState({search: res}))
+       
     }
- 
+
     render(){
-        const {result} = this.state
-        const liste = result.map((result, index) =>{
-            console.log(result)
-            return (
-            <div key={index} className="searchContainer">
-            <a href={`/profile/${result.account_id}`}>
-            <img alt="" height={50} src={result.avatarfull}/>
-            <ul>{result.personaname}</ul>
-            </a>
+        const {search} = this.state
+
+        const liste = search.map((player, index)=>{
+            return (<div key={index} className="player">
+                <a href={`/profile/${player.account_id}`}>
+                <img alt="" height={75} src={player.avatarfull}/>
+                <p>{player.personaname}</p>
+                </a>
             </div>
             )
         })
-        return(<div className="searchWrapper">
+        return (
+        <div className="searchContainer">
             {liste}
-        </div>)
+        </div>
+        )
     }
 }

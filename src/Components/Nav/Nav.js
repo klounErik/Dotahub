@@ -1,15 +1,16 @@
 import React, {Component} from 'react'
+import { NavLink, Redirect, Route} from 'react-router-dom'
 import dota from '../../Images/dota.png'
-import { Input } from 'antd';
 import './Nav.css'
+import 'antd/dist/antd.css';
+import { Input } from 'antd'
 
-const Search = Input.Search;
+const Search = Input
 
 export default class Nav extends Component{
-    search = (id) =>{
-      this.props.search(id)
-      .then(result => this.props.getResult(result))
-    }
+  state = {
+    search: '',
+  }
 
     render(){
         return(
@@ -20,26 +21,50 @@ export default class Nav extends Component{
         </span>
         <ul>
           <span>
-            <a href="/profile/28122613">Profile</a>
+            <NavLink 
+            to="/profile/28122613" 
+            activeStyle={{
+              color: 'rgb(192, 17, 17)',
+              backgroundColor: 'white',
+              padding: 27
+              }}>Profile</NavLink>
           </span>
         </ul>
         <ul>
           <span>
-            <a href="/updates">Patch Notes</a>
+            <NavLink to="/updates" 
+            activeStyle={{
+              color: 'rgb(192, 17, 17)',
+              backgroundColor: 'white',
+              padding: 27
+              }}>Patch Notes</NavLink>
           </span>
         </ul>
         <ul>
           <span>
-            <a href="/streams">Streams</a>
+            <NavLink to="/streams" 
+            activeStyle={{
+              color: 'rgb(192, 17, 17)',
+              backgroundColor: 'white',
+              padding: 27
+              }}>Streams</NavLink>
           </span>
         </ul>
         <ul>
           <span>
-            <a href="/favouritestreams">Favourite Streams</a>
+            <NavLink to="/favouritestreams" 
+            activeStyle={{
+              color: 'rgb(192, 17, 17)',
+              backgroundColor: 'white',
+              padding: 27
+              }}>Favourite Streams</NavLink>
           </span>
         </ul>
-        <div className="search">
-        </div>
+        <ul>
+          <span>
+        <Search size="default" onPressEnter={() => window.location.href = `/search/${this.state.search}`} onChange={(e) => this.setState({search: e.target.value})} placeholder="Search Player..."/>
+        </span>
+        </ul>
       </div>
         )
     }

@@ -3,7 +3,6 @@ import './PlayerProfile.css'
 import { Table } from 'semantic-ui-react'
 import Matches from './Matches/Matches'
 import SteamIcon from '../../Images/steam-icon.png'
-import Loader from '../Loader/Loader'
 import DotabuffIcon from '../../Images/dotabuff-logo.png'
 import Ranks from '../../Data/Ranks.json'
 
@@ -26,9 +25,8 @@ export default class PlayerProfile extends Component{
 
     render(){
         const {profile, playerheroes, heroes} = this.state
-        console.log(profile)
         if(profile.length === 0 || heroes.length === 0 || playerheroes.length === 0){
-            return <Loader/>
+            return <h1>Loading...</h1>
         }
         const liste = playerheroes.map((hero, index)=>{
             let parse = parseInt(hero.hero_id, 10)

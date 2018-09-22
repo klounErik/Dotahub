@@ -1,12 +1,19 @@
 .home{
-    padding: 200px;
     color: white;
+    font-size: 20px;
     background-color: black;
 }
 
 .postContainer{
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: black;
 }
+
+
 .home ul {
     margin: 10px;
     padding: 0px;
