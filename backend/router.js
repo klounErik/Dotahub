@@ -48,7 +48,7 @@ Router.get('/streams', (req, res) => {
     fetch('https://api.twitch.tv/helix/streams/?game_id=29595&language=en',{
             method: 'GET',
             headers:{
-                "Client-ID": "nt60tmurnk35i1xj18lvdp8q02dhv6"
+                "Client-ID": 
             }}).then(result => result.json())
             .then(json => res.send(json))   
 })
